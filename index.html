@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bulb</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+    <div class="container">
+      <img
+        id="myImage"
+        src="./gray.png"
+        onclick="changeImage()"
+        alt="off"
+        height="380"
+      />
+    </div>
+      <div class="colors">
+        <section>
+        <button type="button" id="red"  onmouseover="document.getElementById('myImage').src='./red.png'"></button>
+        <button type="button" id="blue" onmouseover="document.getElementById('myImage').src='./blue.png'"></button>
+        <button type="button" id="green" onmouseover="document.getElementById('myImage').src='./green.png'"></button>
+        
+       <!-- </div>
+       <div class="colors"> -->
+
+        <button type="button" 
+        id="cyan"onclick="document.getElementById('myImage').src='./cyan.png'"></button>
+        <button type="button" id="orange"onclick="document.getElementById('myImage').src='./orange.png'"></button>
+        <button type="button" id="purple"onclick="document.getElementById('myImage').src='./purple.png'"></button>
+      </section>
+    </div>
+  </main>
+    <!-- javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>
